@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-bar {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #a3cef1;
+  box-shadow: 0 0 10px black;
+  z-index: 1000;
+}
+
+nav .logo img {
+  width: 150px;
+  cursor: pointer;
+  margin: 7px 0;
+  position: absolute;
+  left: 250px;
+  bottom: 1px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #051923;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.1s;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #00a6fb;
+  display: block;
+  transition: 0.2s linear;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #00a6fb;
+}
+
+nav .icon i {
+  font-size: 18px;
+  color: #051923;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav .icon i:hover {
+  color: #00a6fb;
+}
+
+section .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 70px;
+}
+
+section .main .main-text h1 {
+  font-size: 40px;
+
+  font-family: "Merienda", cursive;
+  color: #00a6fb;
+  padding-left: 100px;
+  padding-bottom: 200px;
+  text-decoration: underline;
+}
+
+section .main .main-image img {
+  width: 800px;
+  padding-left: 80px;
+}
+
+section .p1 {
+  width: 400px;
+  text-align: justify;
+  position: absolute;
+  left: 80px;
+  bottom: 200px;
+  line-height: 22px;
+}
+
+/* About */
+#About {
+  background-image: url(backgroundimage0.3.png);
+  background-size: 1250px 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+}
+
+.h2-2 {
+  font-family: "Merienda", cursive;
+  color: #00a6fb;
+  padding-left: 515px;
+  font-size: 40px;
+}
+
+.h3 {
+  padding-left: 528px;
+  color: #00a6fb;
+  text-decoration: underline;
+}
+
+.p-2 {
+  width: 1000px;
+  text-align: justify;
+  padding-left: 150px;
+  font-weight: 900;
+}
+
+.image img {
+  width: 390px;
+  margin-left: 410px;
+}
+
+/* PRODUCTS */
+
+.products {
+  padding-top: 70px;
+}
+
+.products .product-h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #00a6fb;
+  font-family: "Merienda", cursive;
+  padding-bottom: 30px;
+  padding-right: 70px;
+  text-decoration: underline #00a6fb;
+}
+
+.products .products-box {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.products .products-box .product-card {
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 0 10px #00a6fb;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.products .products-box .product-card .product-image {
+  height: 150px;
+  overflow: hidden;
+}
+
+.products .products-box .product-card .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.products .products-box .product-card .product-image:hover img {
+  transform: scale(1.1);
+}
+
+.product-name {
+  text-align: center;
+}
+
+#information {
+  padding: 50px 0;
+  padding-left: 400px;
+}
+
+/* CONTACT */
+
+/* FOOTER */
+footer {
+  padding: 30px 0 0 20px;
+  background: #a3cef1;
+}
+
+footer .footer-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-tag {
+  text-align: center;
+}
+
+.footer-tag h2 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.footer-tag i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.footer-tag i:hover {
+  color: #00a6fb;
+}
